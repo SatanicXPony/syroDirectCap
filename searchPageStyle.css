@@ -1,0 +1,17 @@
+.form-group {
+    background-color: gray;
+    opacity: 0.6;
+    margin: 0;
+} /*need color to expand full width*/
+/*is this a partial file? bc it needs 
+to be connected to style.css, but how?*/
+.footerNavHeading {
+    color: white;
+}
+.footerNav-link {
+    color: white;
+    text-decoration: none;
+}
+active:hover {
+    color: blue;
+}
