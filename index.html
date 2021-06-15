@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Page</title>
-    <link rel="stylesheet" href="normalize.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
-    crossorigin="anonymous" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
     <!-- Required Core Stylesheet -->
-<link rel="stylesheet" href="glide.core.css">
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="glide.core.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
 
-<!-- Optional Theme Stylesheet -->
-<link rel="stylesheet" href="glide.theme.css">
-<link rel="stylesheet" href="directStyle.css"/>
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="glide.theme.css">
+    <link rel="stylesheet" href="directStyle.css" />
 </head>
+
 <body>
-    <header class="sticky-top"><!-- NavBar Beginning -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3"><!--needed spacing & thickness-->
+    <header class="sticky-top">
+        <!-- NavBar Beginning -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <!--needed spacing & thickness-->
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">B3</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#mainNav" aria-controls="navbarSupportedContent" 
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button><!-- Collapsing Hamburger Menu for Nav Items ud:content doesnt show when clicked-->
                 <div class="navbar-collapse collapse justify-content-center" id="mainNav">
                     <ul class="navbar-nav">
@@ -46,113 +47,115 @@
     </header>
     <main>
         <!--carousel-->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                 <div class="carousel-inner">
-                   <div class="carousel-item active">
-                      <div class="card">
-                           <img class="card-img-top" style = "height: 300px "src="images/slideFit.png"
-                                alt="Placeholder for Site logo link">
-                      </div>
-                   </div>
-                   <div class="carousel-item">
-                      <div class="card">
-                           <img class="card-img-top" style = "height: 300px "src="images/slide1.jpg"
-                                alt="Placeholder for Site logo link">
-                      </div>
-                   </div>
-                   <div class="carousel-item">
-                      <div class="card">
-                           <img class="card-img-top" style = "height: 300px "src="https://via.placeholder.com/100"
-                                alt="Placeholder for Site logo link">
-                      </div>
-                   </div>
-                 </div>
-                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                   <span class="visually-hidden">Previous</span>
-                 </button>
-                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                   <span class="visually-hidden">Next</span>
-                 </button>
-               </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img class="card-img-top" style="height: 300px " src="images/slideFit.png"
+                            alt="Placeholder for Site logo link">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img class="card-img-top" style="height: 300px " src="images/slide1.jpg"
+                            alt="Placeholder for Site logo link">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <img class="card-img-top" style="height: 300px " src="https://via.placeholder.com/100"
+                            alt="Placeholder for Site logo link">
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
         </div><!-- Card Row Section Begins -->
         <div class="container mt-3">
-            <div class="glide">  <!--where does this div get closed?-->
+            <div class="glide">
                 <div class="glide__track" data-glide-el="track">
-                  <ul class="glide__slides">
-                    <div class="col-6 col-md-3 mb-5">
+                    <ul class="glide__slides">
+                        <div class="col-6 col-md-3 mb-5">
+                            <div class="card glide__slide">
+                                <img class="card-img-top" src="https://via.placeholder.com/100"
+                                    alt="Placeholder for Site logo link">
+                                <div class="card-body">
+                                    <p class="card-text">Brief Site Description.</p>
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card glide__slide">
-                            <img class="card-img-top" src="https://via.placeholder.com/100" 
-                            alt="Placeholder for Site logo link">
+                            <img class="card-img-top" src="https://via.placeholder.com/100"
+                                alt="Placeholder for Site logo link">
                             <div class="card-body">
                                 <p class="card-text">Brief Site Description.</p>
                                 <p class="card-text">
                                 </p>
                             </div>
                         </div>
-                    </div>
+
                         <div class="card glide__slide">
-                            <img class="card-img-top" src="https://via.placeholder.com/100" 
-                            alt="Placeholder for Site logo link">
+                            <img class="card-img-top" src="https://via.placeholder.com/100"
+                                alt="Placeholder for Site logo link">
                             <div class="card-body">
                                 <p class="card-text">Brief Site Description.</p>
                                 <p class="card-text">
                                 </p>
                             </div>
                         </div>
-                    
+
                         <div class="card glide__slide">
-                            <img class="card-img-top" src="https://via.placeholder.com/100" 
-                            alt="Placeholder for Site logo link">
+                            <img class="card-img-top" src="https://via.placeholder.com/100"
+                                alt="Placeholder for Site logo link">
                             <div class="card-body">
                                 <p class="card-text">Brief Site Description.</p>
                                 <p class="card-text">
                                 </p>
                             </div>
                         </div>
-        
+
                         <div class="card glide__slide">
-                            <img class="card-img-top" src="https://via.placeholder.com/100" 
-                            alt="Placeholder for Site logo link">
+                            <img class="card-img-top" src="https://via.placeholder.com/100"
+                                alt="Placeholder for Site logo link">
                             <div class="card-body">
                                 <p class="card-text">Brief Site Description.</p>
                                 <p class="card-text">
                                 </p>
                             </div>
                         </div>
-                    
-                    <div class="card glide__slide">
-                        <img class="card-img-top" src="https://via.placeholder.com/100" 
-                        alt="Placeholder for Site logo link">
-                        <div class="card-body">
-                            <p class="card-text">Brief Site Description.</p>
-                            <p class="card-text">
-                            </p>
-                        </div>
-                    </div>
-                    
+
                         <div class="card glide__slide">
-                            <img class="card-img-top" src="https://via.placeholder.com/100" 
-                            alt="Placeholder for Site logo link">
+                            <img class="card-img-top" src="https://via.placeholder.com/100"
+                                alt="Placeholder for Site logo link">
                             <div class="card-body">
                                 <p class="card-text">Brief Site Description.</p>
                                 <p class="card-text">
                                 </p>
                             </div>
                         </div>
-                    <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">start</button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">end</button>
-                    </div>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">start</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">end</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6 col-md-3 mb-5">
                     <div class="card">
-                        <img class="card-img-top" src="https://via.placeholder.com/100" 
-                        alt="Placeholder for Site logo link">
+                        <img class="card-img-top" src="https://via.placeholder.com/100"
+                            alt="Placeholder for Site logo link">
                         <div class="card-body">
                             <p class="card-text">Brief Site Description.</p>
                             <p class="card-text">
@@ -162,8 +165,8 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="https://via.placeholder.com/100" 
-                        alt="Placeholder image for site logo link">
+                        <img class="card-img-top" src="https://via.placeholder.com/100"
+                            alt="Placeholder image for site logo link">
                         <div class="card-body">
                             <p class="card-text">Brief Site Description.</p>
                             <p class="card-text">
@@ -172,10 +175,10 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3" >
+                <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="https://via.placeholder.com/100" 
-                        alt="Placeholder image for site logo link">
+                        <img class="card-img-top" src="https://via.placeholder.com/100"
+                            alt="Placeholder image for site logo link">
                         <div class="card-body">
                             <p class="card-text">Brief Site Description.</p>
                             <p class="card-text">
@@ -185,8 +188,8 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="card">
-                        <img class="card-img-top" src="https://via.placeholder.com/100" 
-                        alt="Placeholder image for site logo link">
+                        <img class="card-img-top" src="https://via.placeholder.com/100"
+                            alt="Placeholder image for site logo link">
                         <div class="card-body">
                             <p class="card-text">Brief Site Description.</p>
                             <p class="card-text">
@@ -195,42 +198,54 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </main>
 
-    <footer><!--Footer Section Begins-->
+    <footer>
+        <!--Footer Section Begins-->
         <div class="container-fluid bg-dark pt-5 pb-5">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="footerNavHeading"><!--want to change link color to white on hover-->
-                <h1>Additional Links</h1>
-              </div>
-              <div class="nav justify-content-between footerNav">
-                <div class="footerNav-item"><!--change: names same as navbar-->
-                  <a href="active" class="footerNav-link"> Shipping & Returns </a>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footerNavHeading">
+                        <!--want to change link color to white on hover-->
+                        <h1>Additional Links</h1>
+                    </div>
+                    <div class="nav justify-content-between footerNav">
+                        <div class="footerNav-item">
+                            <!--change: names same as navbar-->
+                            <a href="active" class="footerNav-link"> Shipping & Returns </a>
+                        </div>
+                        <div class="footerNav-item">
+                            <a href="active" class="footerNav-link"> Terms</a>
+                        </div>
+                        <div class="footerNav-item">
+                            <a href="active" class="footerNav-link"> Contact </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footerNav-item">
-                  <a href="active" class="footerNav-link"> Terms</a>
+                <div class="col-md-6">
+                    <!-- Assignment noot perfect bt complete -->
                 </div>
-                <div class="footerNav-item">
-                  <a href="active" class="footerNav-link"> Contact </a>
-                </div>
-              </div>
             </div>
-              <div class="col-md-6"><!-- Assignment noot perfect bt complete -->
-             </div>     
-          </div>
         </div>
     </footer>
 
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
     <script src="glide.min.js"></script>
-    <script> new Glide(".glide", {type: "carousel", perView: 4, 
-    breakpoints: {800: {perView: 2}} }).mount();
+    <script> const glide = new Glide(".glide", {
+            type: "carousel",
+            perView: 4,
+            dragThreshold: false,
+            swipeThreshold: false,
+            breakpoints: {
+                800: {
+                    perView: 2
+                }
+            }
+        }).mount();
     </script>
 </body>
+
 </html>
