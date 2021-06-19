@@ -1,5 +1,5 @@
 import Card from "./Card.js"
-
+{/*may need to set up state in here */}
 const cards = [
   { title: "a", img: "https://via.placeholder.com/100", url: "c", description: "d" },
   { title: "e", img: "https://via.placeholder.com/100", url: "g", description: "h" },
