@@ -9,6 +9,7 @@ function App() {
       <main>
         <Header />
         <Slidetrack />
+        <Slidetrack />
       </main>
     </div>
   );

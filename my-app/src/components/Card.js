@@ -1,7 +1,9 @@
-function Card(cardData) {
+function Card({cardData}) {
   /* 
   *cardData = { title, img, url, description }
   */
+
+  console.log(cardData)
 
   return (
   <div className="col-6 col-md-3 mb-5">

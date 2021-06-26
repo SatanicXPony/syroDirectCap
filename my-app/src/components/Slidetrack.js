@@ -1,16 +1,31 @@
 import Card from "./Card.js"
+import { useState, useEffect } from 'react';
 {/*may need to set up state in here */}
-const cards = [
-  { title: "a", img: "https://via.placeholder.com/100", url: "c", description: "d" },
-  { title: "e", img: "https://via.placeholder.com/100", url: "g", description: "h" },
-  { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
-  { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
-  { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
-  { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" }
-];
 
 function Cardbuilder() {
-  return cards.map((card, key) => <Card key={card + key} cardData={card} />);
+  const [cards, setCards] = useState([
+    { title: "a", img: "https://via.placeholder.com/100", url: "c", description: "d" },
+    { title: "e", img: "https://via.placeholder.com/100", url: "g", description: "h" },
+    { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
+    { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
+    { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
+    { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" }
+  ]);
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      const updatedCards = [...cards];
+      const firstCard = updatedCards.shift();
+      firstCard.title = 1;
+      updatedCards.unshift(firstCard)
+      setCards(updatedCards)
+    }, 5000)
+  }, [])
+
+  return cards.map((card, index) => {
+    // console.log(card, index)
+    return <Card key={index} cardData={card} />
+  });
 
 }
 
