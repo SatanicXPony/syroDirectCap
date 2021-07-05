@@ -1,6 +1,6 @@
 import Card from "./Card.js"
 import { useState, useEffect } from 'react';
-{/*may need to set up state in here */}
+
 
 function Cardbuilder() {
   const [cards, setCards] = useState([
