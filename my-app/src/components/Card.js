@@ -9,7 +9,11 @@ function Card({cardData}) {
   <div className="col-6 col-md-3 mb-5">
     <div class="card glide__slide">
       <img className="card-img-top" src={cardData.img}
-          alt="Placeholder for Site logo link" />
+          alt="Placeholder for Site logo link" 
+          style={{cursor: "pointer"}} 
+          onClick={()=>{
+            window.open("https://google.com")
+            }}/>
       <div className="card-body">
           <p className="card-text">{cardData.title}</p>
           <p className="card-text">{cardData.description}
