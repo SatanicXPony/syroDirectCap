@@ -13,11 +13,15 @@
   animate: {
     height: 0,
     transition: {
-      duration: 2.5
+      when: "afterChildren" //after logo animates, the box will start its transition
+      duration: 5.5
     }
   }
 }
 * const siteTransition = () => {
+  return (
+    <div className="absolute inset-0 flex"
+  )
 
 }
 
