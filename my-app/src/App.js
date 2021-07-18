@@ -1,4 +1,3 @@
-
 import './App.css';
 import Header from './components/Header.js';
 import Slidetrack from "./components/Slidetrack.js"
