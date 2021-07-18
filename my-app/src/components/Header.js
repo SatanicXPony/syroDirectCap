@@ -1,4 +1,4 @@
-import { capLogo } from '../public/images/capLogo'
+import capLogo  from './capLogo.png'
 
 function Header() {
   return (
