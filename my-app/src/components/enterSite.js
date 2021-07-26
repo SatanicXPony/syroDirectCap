@@ -4,9 +4,8 @@
 all of the pages, their routes will need to be wrapped in animate presence*/}
 
 
-import { motion, AnimatePresence } from 'framer-motion'
-import { capLogo } from '../assets/images/capLogo.png' 
-
+import { motion } from 'framer-motion'
+//import { capLogo } from '../assets/images/capLogo.png' 
 
 
 const blueBox = {
@@ -19,9 +18,10 @@ const blueBox = {
     transition: {
       when: "afterChildren", 
       duration: 3.5
-    }
-  }
-}
+    },
+  },
+},
+
 const siteTransition = () => {
   return (
     <div className="absolute inset-0 flex">
