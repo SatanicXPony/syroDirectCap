@@ -22,7 +22,7 @@ const blueBox = {
   },
 },
 
-function landingTransition() {
+const landingTransition = () => {
   return (
     <div className="absolute inset-0 flex">
       <motion.div 

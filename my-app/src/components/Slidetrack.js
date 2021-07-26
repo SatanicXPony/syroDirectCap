@@ -23,10 +23,9 @@ function Cardbuilder() {
       updatedCards.unshift(firstCard)
       setCards(updatedCards)
     }, 5000)
-  }, [])
+  }, [cards])
 
   return cards.map((card, index) => {
-    // console.log(card, index)
     return <Card key={index} cardData={card} />
   });
 
@@ -48,5 +47,6 @@ function Slidetrack() {
   )
 }
 export default Slidetrack;
+
 {/* when importing this component will 
 it be taken in by cards on app.js? */}
