@@ -16,13 +16,13 @@ const blueBox = {
   animate: {
     height: 0,
     transition: {
-      when: "afterChildren", 
-      duration: 3.5
+      ease: "easeOut", 
+      duration: 3
     },
   },
 },
 
-const siteTransition = () => {
+function landingTransition() {
   return (
     <div className="absolute inset-0 flex">
       <motion.div 
@@ -35,4 +35,5 @@ const siteTransition = () => {
   );
 };
 
+export default landingTransition;
 
