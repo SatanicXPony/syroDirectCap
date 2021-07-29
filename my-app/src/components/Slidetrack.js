@@ -13,8 +13,7 @@ function Cardbuilder() {
     { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" }
   ]);
 
-  {/*Could this ^ just be written as a consitional statement like the 
-  one we did for pagination on the appliances? */}
+
 
   useEffect(()=>{
     setTimeout(()=>{
@@ -65,5 +64,3 @@ const Slidetrack = () => {
 
 export default Slidetrack;
 
-{/* when importing this component will 
-it be taken in by cards on app.js? */}
