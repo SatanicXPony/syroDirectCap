@@ -2,6 +2,7 @@ import Card from "./Card.js"
 import { useState, useEffect } from 'react';
 
 
+
 function Cardbuilder() {
   const [cards, setCards] = useState([
     { title: "a", img: "https://via.placeholder.com/100", url: "c", description: "d" },
@@ -25,13 +26,28 @@ function Cardbuilder() {
     }, 5000)
   }, [cards])
 
+
   return cards.map((card, index) => {
     return <Card key={index} cardData={card} />
   });
 
 }
 
-function Slidetrack() {
+
+// const slideSetup = new Glide(".glide", {
+//   type: "carousel",
+//   perView: 4,
+//   dragThreshold: false,
+//   swipeThreshold: false,
+//   breakpoints: {
+//       800: {
+//           perView: 2
+//       }
+//   }
+// }).mount();
+
+
+const Slidetrack = () => {
   return(
     <div class="container mt-3">
       <div class="glide">
@@ -45,7 +61,8 @@ function Slidetrack() {
       </div>
     </div>
   )
-}
+};
+
 export default Slidetrack;
 
 {/* when importing this component will 
