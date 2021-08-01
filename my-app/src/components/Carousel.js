@@ -1,18 +1,48 @@
-function Carousel() {
-  return(
-    <div className="container-fluid">
-      <div className="card bg-dark text-white">
-        <img src="https://via.placeholder.com/100" class="card-img" alt="this is img 1"/>
-        <div className="card-img-overlay">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p className="card-text">Last updated 3 mins ago</p>
-        </div>
-      </div>
-    </div>
-  )
+import Carousel from "react-bootstrap/Carousel";
+
+const MyCarousel = () => {
+  return (
+    <Carousel fade>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-100"
+          src="https://via.placeholder.com/720x200"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-100"
+          src="https://via.placeholder.com/720x200"
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://via.placeholder.com/720x200"
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
 };
-export default Carousel;
+
+export { MyCarousel };
 
 {/* I have the img to display but i need to...
 * resize image and style it w/ obj-fit so it doesnt shrink then...
