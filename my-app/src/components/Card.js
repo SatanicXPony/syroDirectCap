@@ -1,3 +1,5 @@
+import Accordion from 'react-bootstrap/Accordion'
+
 function Card({cardData}) {
   /* 
   *cardData = { title, img, url, description }
@@ -14,11 +16,12 @@ function Card({cardData}) {
           onClick={()=>{
             window.open("https://google.com")
             }}/>
-      <div className="card-body">
-          <p className="card-text">{cardData.title}</p>
-          <p className="card-text">{cardData.description}
-          </p>
-      </div>
+           <Accordion>
+             <Accordion.Item eventKey="0">
+              <Accordion.Header>{cardData.title}</Accordion.Header>
+                <Accordion.Body>{cardData.description}</Accordion.Body>
+             </Accordion.Item>
+          </Accordion>
     </div>
   </div>
   )

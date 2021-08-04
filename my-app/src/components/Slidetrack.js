@@ -33,17 +33,6 @@ function Cardbuilder() {
 }
 
 
-// const slideSetup = new Glide(".glide", {
-//   type: "carousel",
-//   perView: 4,
-//   dragThreshold: false,
-//   swipeThreshold: false,
-//   breakpoints: {
-//       800: {
-//           perView: 2
-//       }
-//   }
-// }).mount();
 
 
 const Slidetrack = () => {
