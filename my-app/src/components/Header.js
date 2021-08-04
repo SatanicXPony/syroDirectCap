@@ -1,5 +1,4 @@
 import capLogo from '../assets/images/capLogo.png';
-import Navbar from 'react-bootstrap/Navbar'
 
 {/* will i need to useState for every page that uses reactstrap? */}
 
