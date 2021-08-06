@@ -1,7 +1,9 @@
 import Card from "./Card.js"
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from 'react';
 
-
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 function Cardbuilder() {
   const [cards, setCards] = useState([
@@ -33,22 +35,23 @@ function Cardbuilder() {
 }
 
 
-
-
 const Slidetrack = () => {
   return(
-    <div class="container mt-3">
-      <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">{Cardbuilder()}</ul>
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Prev</button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+    <Swiper
+    spaceBetween={10}
+    slidesPerView={2}
+    navigation
+    pagination={{ clickable: true }}
+    scrollbar={{ draggable: true }}
+    onSwiper={(swiper) => console.log(swiper)}
+    onSlideChange={() => console.log("slide change")}
+  >
+    <SwiperSlide>{Cardbuilder}</SwiperSlide>
+    <SwiperSlide>{Cardbuilder}</SwiperSlide>
+    <SwiperSlide>{Cardbuilder}</SwiperSlide>
+    ...
+  </Swiper>
+);
 };
 
 export default Slidetrack;
