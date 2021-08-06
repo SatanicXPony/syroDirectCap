@@ -46,9 +46,9 @@ const Slidetrack = () => {
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log("slide change")}
   >
-    <SwiperSlide>{Cardbuilder}</SwiperSlide>
-    <SwiperSlide>{Cardbuilder}</SwiperSlide>
-    <SwiperSlide>{Cardbuilder}</SwiperSlide>
+    <SwiperSlide>{Cardbuilder()}</SwiperSlide>
+    <SwiperSlide>{Cardbuilder()}</SwiperSlide>
+    <SwiperSlide>{Cardbuilder()}</SwiperSlide>
     ...
   </Swiper>
 );
