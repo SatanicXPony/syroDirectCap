@@ -44,7 +44,3 @@ const MyCarousel = () => {
 
 export { MyCarousel };
 
-{/* I have the img to display but i need to...
-* resize image and style it w/ obj-fit so it doesnt shrink then...
-* bring in alice-carousel to add more cards on a slider 
-* if this works i can do the same for my main cards component*/}

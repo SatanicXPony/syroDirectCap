@@ -1,12 +1,13 @@
 import './App.css';
 import React from "react";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-//import landingTransition from './components/landingTransition';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Header from './components/Header.js';
 import { MyCarousel } from './components/Carousel';
 import Slidetrack from "./components/Slidetrack.js"
-//import { AnimatePresence } from 'framer-motion';
 import Contact from "./components/Contact"
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
 
 
 function App() {
@@ -14,16 +15,12 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-
           <Route path="/contact">
             <Contact/>
           </Route>
-
           <Route path="/">
-          <landingTransition/>
         <Header />
         <MyCarousel />
-        <Slidetrack />
         <Slidetrack />
           </Route>
         </Switch>

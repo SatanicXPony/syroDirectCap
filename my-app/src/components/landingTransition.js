@@ -4,7 +4,7 @@
 all of the pages, their routes will need to be wrapped in animate presence*/}
 
 
-import { motion } from 'framer-motion'
+{/* import { motion } from 'framer-motion'
 //import { capLogo } from '../assets/images/capLogo.png' 
 
 
@@ -35,5 +35,5 @@ const landingTransition = () => {
   );
 };
 
-export default landingTransition;
+export default landingTransition; */}
 
