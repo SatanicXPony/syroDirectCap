@@ -34,23 +34,22 @@ function Cardbuilder() {
 
 }
 
-
 const Slidetrack = () => {
   return(
     <Swiper
     spaceBetween={10}
-    slidesPerView={2}
+    slidesPerView={'auto'}
     navigation
     pagination={{ clickable: true }}
     scrollbar={{ draggable: true }}
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log("slide change")}
   >
-    <SwiperSlide>{Cardbuilder()}</SwiperSlide>
+    <SwiperSlide>{Cardbuilder}</SwiperSlide>
     ...
   </Swiper>
 );
 };
 
-export default Slidetrack;
+export { Slidetrack };
 
