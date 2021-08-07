@@ -1,9 +1,10 @@
 import Card from "./Card.js"
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import "./Card.scss"
+import SwiperCore, { Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from 'react';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination]);
 
 function Cardbuilder() {
   const [cards, setCards] = useState([
