@@ -1,5 +1,4 @@
 import Card from "./Card.js"
-import "./Card.scss"
 import SwiperCore, { Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from 'react';
@@ -46,7 +45,7 @@ const Slidetrack = () => {
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log("slide change")}
   >
-    <SwiperSlide>{Cardbuilder}</SwiperSlide>
+    <SwiperSlide>{Cardbuilder()}</SwiperSlide>
     ...
   </Swiper>
 );

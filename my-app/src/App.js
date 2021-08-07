@@ -8,7 +8,6 @@ import Contact from "./components/Contact"
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
-//import Card from './components/Card';
 
 
 function App() {
