@@ -1,5 +1,4 @@
 import './App.css';
-import "./Card.scss"
 import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Header from './components/Header.js';
@@ -26,8 +25,7 @@ function App() {
         <Slidetrack />
           </Route>
         </Switch>
-      </Router>
-        
+      </Router>    
     </div>
   );
 }

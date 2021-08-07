@@ -1,4 +1,4 @@
-import Accordion from 'react-bootstrap/Accordion'
+import Accordion from 'react-bootstrap/Accordion';
 import "./Card.scss";
 
 function Card({cardData}) {
