@@ -1,15 +1,13 @@
-import capLogo from '../assets/images/capLogo.png';
-
-{/* will i need to useState for every page that uses reactstrap? */}
+import Logo from '../assets/images/Logo.svg';
 
 function Header() {
   return (
-    <header className="sticky-top">
+    <div className="sticky-top">
     {/* NavBar Beginning*/}
     <div className="container-fluid">
       <nav className="navbar navbar-expand-lg navbar-light py-3">
         <a className="navbar-brand" href="/">
-          <img src={ capLogo } alt="mainLogo" width="90px" height="60px"/>
+          <img src={ Logo } alt="mainLogo" width="100vw"/>
         </a> {/* Replace brand w logo, change nav clr */}
         <button class="navbar-toggler" 
         type="button" 
@@ -28,7 +26,7 @@ function Header() {
         </div>
       </nav>
     </div>
-</header>
+</div>
   )
 };
 
