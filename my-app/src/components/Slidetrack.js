@@ -1,4 +1,4 @@
-import Card from "./Card.js"
+import DisplayCard from "./Card.js"
 import SwiperCore, { Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from 'react';
@@ -9,10 +9,10 @@ function Cardbuilder() {
   const [cards, setCards] = useState([
     { title: "a", img: "https://via.placeholder.com/100", url: "c", description: "d" },
     { title: "e", img: "https://via.placeholder.com/100", url: "g", description: "h" },
-    { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
-    { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
-    { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
-    { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" }
+    // { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
+    // { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
+    // { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
+    // { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" }
   ]);
 
 
@@ -29,7 +29,7 @@ function Cardbuilder() {
 
 
   return cards.map((card, index) => {
-    return <Card key={index} cardData={card} />
+    return <DisplayCard key={index} cardData={card} />
   });
 
 }

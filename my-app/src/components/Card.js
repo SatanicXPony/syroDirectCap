@@ -1,28 +1,30 @@
-import Accordion from 'react-bootstrap/Accordion';
+//import Accordion from 'react-bootstrap/Accordion';
+import {Container, Row, Col, Card} from 'react-bootstrap'
 
-
-function Card({cardData}) {
+function DisplayCard({cardData}) {
   return (
-  <div className="container">
-    <div className="row">
-      <div className="col-6 col-md-3 mb-5">
-        <div className="card, style={width: '18rem;'}">
-          <img className="card-img-top" src={cardData.img}
+  <Container>
+    <Row xs={6} md={12}>
+      <Col> 
+      <Card>
+        <Card style={{width: '18rem'}}>
+          <Card.Img variant="top" src={cardData.img}
               alt="Placeholder for Site logo link" 
               style={{cursor: "pointer"}} 
               onClick={()=>{
                 window.open("https://google.com")
                 }}/>
-                <Accordion>
+                {/* <Accordion>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>{cardData.title}</Accordion.Header>
                   <Accordion.Body>{cardData.description}</Accordion.Body>
                 </Accordion.Item>
-              </Accordion>
-            </div>
-          </div>
-      </div>
-    </div>
+              </Accordion> */}
+            </Card>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 };
-export default Card;
+export default DisplayCard;
