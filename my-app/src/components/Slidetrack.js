@@ -8,7 +8,7 @@ SwiperCore.use([Navigation, Pagination]);
 function Cardbuilder() {
   const [cards, setCards] = useState([
     { title: "a", img: "https://via.placeholder.com/100", url: "c", description: "d" },
-    { title: "e", img: "https://via.placeholder.com/100", url: "g", description: "h" },
+    //{ title: "e", img: "https://via.placeholder.com/100", url: "g", description: "h" },
     // { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
     // { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
     // { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },

@@ -4,7 +4,8 @@ import {Container, Row, Col, Card} from 'react-bootstrap'
 function DisplayCard({cardData}) {
   return (
   <Container>
-    <Row xs={6} md={12}>
+    <Row xs={2} md={4} className='g-4'>
+    {Array.from({ length: 4 }).map((_, idx) => (
       <Col> 
       <Card>
         <Card style={{width: '18rem'}}>
@@ -23,6 +24,7 @@ function DisplayCard({cardData}) {
             </Card>
           </Card>
         </Col>
+    ))}
       </Row>
     </Container>
   );

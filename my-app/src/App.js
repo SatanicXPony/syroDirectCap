@@ -22,6 +22,7 @@ function App() {
         <Header />
         <MyCarousel />
         <Slidetrack />
+        <Slidetrack />
           </Route>
         </Switch>
       </Router>    

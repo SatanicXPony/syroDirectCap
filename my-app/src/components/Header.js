@@ -1,15 +1,16 @@
-import Logo from '../assets/images/Logo.svg';
+//import capLogo from '../assets/images/capLogo.png';
 //import {Image } from "react-bootstrap/Image";
+//import './Header.scss';
 
 function Header() {
   return (
     <div className="sticky-top">
     {/* NavBar Beginning*/}
-    <div className="container-fluid">
+    <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light py-3">
         <a className="navbar-brand" href="/">
-          <img src={ Logo } alt="mainLogo" fluid />
-        </a> {/* Replace brand w logo, change nav clr */}
+          <img src={""} alt="mainLogo"/>
+        </a> 
         <button class="navbar-toggler" 
         type="button" 
         data-toggle="collapse" 
