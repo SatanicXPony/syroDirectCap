@@ -1,4 +1,5 @@
 import Logo from '../assets/images/Logo.svg';
+//import {Image } from "react-bootstrap/Image";
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
     <div className="container-fluid">
       <nav className="navbar navbar-expand-lg navbar-light py-3">
         <a className="navbar-brand" href="/">
-          <img src={ Logo } alt="mainLogo" width="100vw"/>
+          <img src={ Logo } alt="mainLogo" fluid />
         </a> {/* Replace brand w logo, change nav clr */}
         <button class="navbar-toggler" 
         type="button" 
