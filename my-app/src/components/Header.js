@@ -7,9 +7,9 @@ function Header() {
     <div className="sticky-top">
     {/* NavBar Beginning*/}
     <div className="container">
-      <nav className="navbar navbar-expand-lg navbar-light py-3">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <a className="navbar-brand" href="/">
-          <img src={Logo} alt="mainLogo" style={{height: 50 }}/>
+          <img src={Logo} alt="mainLogo" style={{height: 70 }}/>
         </a> 
         <button class="navbar-toggler" 
         type="button" 
