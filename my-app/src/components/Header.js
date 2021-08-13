@@ -1,4 +1,4 @@
-//import capLogo from '../assets/images/capLogo.png';
+import Logo from '../assets/images/Logo.svg';
 //import {Image } from "react-bootstrap/Image";
 //import './Header.scss';
 
@@ -9,7 +9,7 @@ function Header() {
     <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light py-3">
         <a className="navbar-brand" href="/">
-          <img src={""} alt="mainLogo"/>
+          <img src={Logo} alt="mainLogo" style={{height: 50 }}/>
         </a> 
         <button class="navbar-toggler" 
         type="button" 
@@ -20,11 +20,13 @@ function Header() {
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
+        <div className="d-flex">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
+        </div>
         </div>
       </nav>
     </div>
