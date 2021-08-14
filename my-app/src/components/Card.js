@@ -1,5 +1,5 @@
 //import Accordion from 'react-bootstrap/Accordion';
-import {Container, Row, Col, Card} from 'react-bootstrap'
+import {Card} from 'react-bootstrap'
 
 function DisplayCard({cardData}) {
   return (
@@ -11,12 +11,12 @@ function DisplayCard({cardData}) {
               onClick={()=>{
                 window.open("https://google.com")
                 }}/>
-                {/* <Accordion>
+                <Accordion> 
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>{cardData.title}</Accordion.Header>
                   <Accordion.Body>{cardData.description}</Accordion.Body>
                 </Accordion.Item>
-              </Accordion> */}
+              </Accordion>
             </Card>
           </Card>
   );

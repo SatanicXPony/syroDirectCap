@@ -2,7 +2,7 @@ import DisplayCard from "./Card.js"
 import SwiperCore, { Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from 'react';
-import Row from 'react-bootstrap/Row';
+//import Row from 'react-bootstrap/Row';
 SwiperCore.use([Navigation, Pagination]);
 
 function Cardbuilder() {
