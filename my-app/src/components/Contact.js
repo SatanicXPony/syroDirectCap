@@ -1,5 +1,5 @@
 //import { Header } from "./Header";
-import { Form, FormGroup } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 
 {/* Need header to display on this page as well */}
 const Contact = ()=>{

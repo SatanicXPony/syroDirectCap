@@ -1,5 +1,5 @@
-//import Accordion from 'react-bootstrap/Accordion';
-import {Card} from 'react-bootstrap'
+import Accordion from 'react-bootstrap/Accordion';
+import { Card } from 'react-bootstrap'
 
 function DisplayCard({cardData}) {
   return (
