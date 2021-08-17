@@ -2,7 +2,6 @@ import DisplayCard from "./Card.js"
 import SwiperCore, { Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from 'react';
-//import { Card } from 'react-bootstrap/Card';
 SwiperCore.use([Navigation, Pagination]);
 
 function Cardbuilder() {
@@ -17,15 +16,16 @@ function Cardbuilder() {
 
 
 
-  useEffect(()=>{
-    setTimeout(()=>{
-      const updatedCards = [...cards];
-      const firstCard = updatedCards.shift();
-      firstCard.title = 1;
-      updatedCards.unshift(firstCard)
-      setCards(updatedCards)
-    }, 5000)
-  }, [cards])
+  useEffect(() => {
+    async(() => {
+      const response = await fetch(`postgress://brandymack@localhost:54321/syrodirect`, {
+        method: "GET",
+      });
+      const cardData = await response.json();
+
+      setCards(cardData.cardlay);
+    })();
+  }, [])
 
 
   return cards.map((card, index) => {
