@@ -6,7 +6,10 @@ SwiperCore.use([Navigation, Pagination]);
 
 function Cardbuilder() {
   const [cards, setCards] = useState([
-    { title: "a", img: "https://via.placeholder.com/100", url: "c", description: "d" },
+    { title: "Follow The Orange", 
+    img: "https://images.app.goo.gl/dT3VhMYMmM2TYRia8", 
+    url: "https://wastefreephd.com/2020/03/01/follow-the-orange-a-guide-to-waste-reduction-in-syracuse-ny/", 
+    description: "A local guide to sustainability resources" },
     { title: "e", img: "https://via.placeholder.com/100", url: "g", description: "h" },
     { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
     { title: "i", img: "https://via.placeholder.com/100", url: "k", description: "l" },
