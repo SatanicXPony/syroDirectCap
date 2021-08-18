@@ -1,11 +1,11 @@
 import Accordion from 'react-bootstrap/Accordion';
 import { Card } from 'react-bootstrap'
+import './Card.scss';
 
 function DisplayCard({cardData}) {
   return (
       <Card>
-        <Card style={{width: '18rem'}}>
-          <Card.Img variant="top" src={cardData.img}
+          <Card.Img variant="top" src={cardData.image}
               alt="Placeholder for Site logo link" 
               style={{cursor: "pointer"}} 
               onClick={()=>{
@@ -17,7 +17,6 @@ function DisplayCard({cardData}) {
                   <Accordion.Body>{cardData.description}</Accordion.Body>
                 </Accordion.Item>
               </Accordion>
-            </Card>
           </Card>
   );
 };
