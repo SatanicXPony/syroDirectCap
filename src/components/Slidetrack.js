@@ -3,15 +3,21 @@ import SwiperCore, { Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from 'react';
 SwiperCore.use([Navigation, Pagination]);
+import runtimeEnv from '@mars/heroku-js-runtime-env';
 
 function CardbuilderLocal(){
   const [cardsLocal, setCardsLocal] = useState([
     
   ]);
 
+  let apiURL = 'http://localhost:3001';
+  if (runtimeEnv.REACT_APP_BACKEND_URL){
+    apiURL = runtimeEnv.REACT_APP_BACKEND_URL;
+  }
+
   useEffect(() => {
     (async() => {
-      const response = await fetch(`http://localhost:3001/cardlay/local`, {
+      const response = await fetch(`${apiURL}/cardlay/local`, {
         method: "GET",
       });
       const cardData = await response.json();
@@ -32,7 +38,7 @@ function CardbuilderNational() {
 
   useEffect(() => {
     (async() => {
-      const responseNational = await fetch(`http://localhost:3001/cardlay/national`, {
+      const responseNational = await fetch(`${apiURL}/cardlay/national`, {
         method: "GET",
       });
       const cardDataNational = await responseNational.json();
