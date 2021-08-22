@@ -10,8 +10,8 @@ import {Auth0Provider} from '@auth0/auth0-react';
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
-        domain="<my domain>"
-        clientId="<my client id>"
+        domain="syro-waste-directory.us.auth0.com"
+        clientId="TR7ByQozc5itTaaccqNKUKCMfCUH8TeC"
         redirectUri={window.location.origin}
         scope="read:current_user"
       >

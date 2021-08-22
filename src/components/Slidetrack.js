@@ -1,5 +1,6 @@
 import DisplayCard from "./Card.js"
 import runtimeEnv from '@mars/heroku-js-runtime-env';
+//import { useAuth0 } from '@auth0/auth0-react';
 import SwiperCore, { Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from 'react';
@@ -8,13 +9,16 @@ SwiperCore.use([Navigation, Pagination]);
 
 function CardbuilderLocal(){
   const [cardsLocal, setCardsLocal] = useState([
-    
+  
   ]);
+
 
   let apiURL = 'http://localhost:3001';
   if (runtimeEnv.REACT_APP_BACKEND_URL){
     apiURL = runtimeEnv.REACT_APP_BACKEND_URL;
   }
+
+  //const {user, isAuthenticated, isLoading, loginWithRedirect} = useAuth0();
 
   useEffect(() => {
     (async() => {
@@ -25,7 +29,7 @@ function CardbuilderLocal(){
       setCardsLocal(cardData.cardlays);
     })();
   }, [])
-
+ 
   return cardsLocal.map((card, index) => {
     return <SwiperSlide><DisplayCard key={index} cardData={card} /></SwiperSlide>
   });
@@ -53,6 +57,13 @@ function CardbuilderNational() {
     })();
   }, [])
 
+  // if (isLoading) {
+  //   return <p>Loading...</p>
+  // }
+
+   //if (!isAuthenticated) {
+  //loginWithRedirect();
+  //}
 
   return cardsNational.map((card, index) => {
     return <SwiperSlide><DisplayCard key={index} cardData={card} /></SwiperSlide>
