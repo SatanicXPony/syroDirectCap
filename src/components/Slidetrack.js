@@ -1,9 +1,10 @@
 import DisplayCard from "./Card.js"
+import runtimeEnv from '@mars/heroku-js-runtime-env';
 import SwiperCore, { Navigation, Pagination} from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState, useEffect } from 'react';
 SwiperCore.use([Navigation, Pagination]);
-import runtimeEnv from '@mars/heroku-js-runtime-env';
+
 
 function CardbuilderLocal(){
   const [cardsLocal, setCardsLocal] = useState([
@@ -35,6 +36,11 @@ function CardbuilderNational() {
   const [cardsNational, setCardsNational] = useState([
     
   ]);
+
+  let apiURL = 'http://localhost:3001';
+  if (runtimeEnv.REACT_APP_BACKEND_URL){
+    apiURL = runtimeEnv.REACT_APP_BACKEND_URL;
+  }
 
   useEffect(() => {
     (async() => {
