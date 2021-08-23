@@ -1,36 +1,29 @@
-import Logo from '../assets/images/Logo.svg';
+
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import logov2url  from '../assets/images/Logov2.png'
+
+
 //import {Image } from "react-bootstrap/Image";
-//import './Header.scss';
+import './Header.scss';
 
 function Header() {
   return (
-    <div className="sticky-top">
-    {/* NavBar Beginning*/}
-    <div className="container">
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="/">
-          <img src={Logo} alt="mainLogo" style={{height: 70 }}/>
-        </a> 
-        <button class="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarToggler" 
-        aria-controls="navbarToggler" 
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-        <div className="d-flex">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
-        </ul>
-        </div>
-        </div>
-      </nav>
-    </div>
-</div>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Container>
+    <Navbar.Brand href="#home">
+      <img className="logov2url" src={ logov2url }/> 
+      </Navbar.Brand>
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Collapse id="responsive-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="#Contact">Contact</Nav.Link>
+        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+        </NavDropdown>
+      </Nav>
+    </Navbar.Collapse>
+    </Container>
+  </Navbar>
   )
 };
 

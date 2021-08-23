@@ -64,7 +64,7 @@ function CardbuilderNational() {
    //if (!isAuthenticated) {
   //loginWithRedirect();
   //}
-
+  console.log(cardsNational);
   return cardsNational.map((card, index) => {
     return <SwiperSlide><DisplayCard key={index} cardData={card} /></SwiperSlide>
   });
