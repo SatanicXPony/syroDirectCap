@@ -8,8 +8,22 @@ import Contact from "./components/Contact"
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
+import { useAuth0 } from '@auth0/auth0-react';
 
 function App() {
+
+const auth = useAuth0();
+
+  // if (auth.isLoading) {
+  //   return <p>Loading...</p>
+  // }
+
+  //  if (!auth.isAuthenticated) {
+  // auth.loginWithRedirect();
+  // }
+  // console.log(auth.user);
+
+
   return (
     <div className="App">
       <Router>

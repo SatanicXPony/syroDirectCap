@@ -18,8 +18,6 @@ function CardbuilderLocal(){
     apiURL = runtimeEnv.REACT_APP_BACKEND_URL;
   }
 
-  //const {user, isAuthenticated, isLoading, loginWithRedirect} = useAuth0();
-
   useEffect(() => {
     (async() => {
       const response = await fetch(`${apiURL}/cardlay/local`, {
@@ -57,14 +55,6 @@ function CardbuilderNational() {
     })();
   }, [])
 
-  // if (isLoading) {
-  //   return <p>Loading...</p>
-  // }
-
-   //if (!isAuthenticated) {
-  //loginWithRedirect();
-  //}
-  console.log(cardsNational);
   return cardsNational.map((card, index) => {
     return <SwiperSlide><DisplayCard key={index} cardData={card} /></SwiperSlide>
   });
