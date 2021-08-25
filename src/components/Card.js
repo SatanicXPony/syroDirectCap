@@ -9,7 +9,7 @@ function DisplayCard({cardData}) {
               alt="Placeholder for Site logo link" 
               style={{cursor: "pointer"}} 
               onClick={()=>{
-                window.open("https://google.com")
+                window.location=cardData.url
                 }}/>
                 <Accordion> 
                 <Accordion.Item eventKey="0">

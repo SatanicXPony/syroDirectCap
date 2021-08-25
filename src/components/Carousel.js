@@ -6,7 +6,7 @@ const MyCarousel = () => {
       <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/720x200"
+          src="/static/media/Logov2.7ada2f39.png"
           alt="First slide"
         />
         <Carousel.Caption>
